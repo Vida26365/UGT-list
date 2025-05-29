@@ -1,0 +1,219 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovene]{babel}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=0.2in]{geometry}
+\usepackage{flafter}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{multicol}
+\setlength{\parskip}{0pt}
+\DeclareMathOperator{\Ima}{Im}
+\DeclareMathOperator{\Int}{Int}
+\DeclareMathOperator{\Fr}{Fr}
+\DeclareMathOperator{\Cl}{Cl}
+
+\newcommand{\TT}{\mathcal{T}}
+\newcommand{\BB}{\mathcal{B}}
+\newcommand{\PP}{\mathcal{P}}
+\newcommand{\UU}{\mathcal{U}}
+\newcommand{\CC}{\mathcal{C}}
+
+
+\title{STOP in UGT}
+\author{}
+\date{}
+
+\begin{document}
+\linespread{}
+%\section{STOP}
+
+\setlength\lineskip{0pt}
+        \begin{enumerate}
+            \item (p) Homeomorfizem $f: [a,b]\to[c,d]$ podamo kot $f(x)=\frac{d-c}{b-a}(x-a)+c$.
+            \item (p) Homeomorfizem $f: (-1,1)\to\mathbb{R}$ podamo kot $f(x)=\frac{x}{1-|x|}$ in $g: \mathbb{R}\to(-1,1)$ kot $g(x)=\frac{x}{1+|x|}$.
+            \item (D) Prostor $X$ zadošča prvemu aksiomu števnosti (je $1$-števen), če ima vsaka točka $X$ kako števno bazo okolic.
+            \item (D) Prostor zadošča drugemu aksiomu števnosti (je $2$-števen), če $\exists$ kaka števna baza za njegovo topologijo.
+            \item (I) Metrični prostor $(X,d)$ je $2$-števen natanko takrat, ko v njem $\exists$ števna povsod gosta podmnožica.
+            \item (D) Podmnožica $A$ je povsod gosta v $X$, če seka vsako odprto množico $X$ (tako kot $\mathbb{Q}$ v $\mathbb{R}$), ali ekvivalentno, če je $\overline{A}=X$.
+            \item (D) Prostor je separabilen, če premore kako povsod gosto podmnožico, ki je števna.
+            \item (I) Če je prostor $2$-števen, je tudi separabilen in $1$-števen (obrat ne velja).
+            \item (O) V metričnih prostorih je $2$-števnost ekvivalentna separabilnosti.
+            \item (I)  prostor $Y$ Hausdorffov.~(1) Vsaka končna podmnožica $Y$ je zaprta.~Točke so zaprte.~(2) Točka $y$ je stekališče množice $A\subseteq Y$ natanko takrat, ko vsaka okolica $y$ vsebuje neskončno točk iz $A$.~(3) Zaporedje v $Y$ ima največ eno limito.~(4) Množica točk ujemanja $\left\{x\in X | f(x)=g(x)\right\}$ je zaprta v $X$ za poljubni preslikavi $f,g: X\to Y$.~(5) Če se preslikavi $f,g: X\to Y$ ujemata na neki gosti podmnožici $X$, potem je $f=g$.~(6) Graf preslikave $f: X\to Y$ je azprt podprostor produkta $X\times Y$.
+            \item (D) Aksiomi ločljivosti:  $(X,\TT)$ topološki prostor.~$X$ je: \begin{itemize}
+                \item $T_0$: Za različni točki $x,x'\in X$ $\exists$ okolica ene izmed točki $x,x'$, ki jo loči od druge točke.
+                \item $T_1$: Za različni točki $x,x'\in X$ $\exists$ okolica točke $x$, ki jo loči od $x'$ in obenem $\exists$ okolica točke $x'$, ki jo loči od $x$.
+                \item $T_2$: Za različni točki $x,x'\in X$ $\exists$ okolici, ki ostro ločita $x$ in $x'$.
+                \item $T_3$: Za točki $x\in X$ in zaprto množico $A\subseteq X$, ki ne vsebuje $x$, $\exists$ okolici, ki ostro ločita $x$ in $A$.
+                \item $T_{3\frac{1}{2}}$: $a\in X$ in $A$ zaprta množica, ki ne vsebuje $a$.~Če za vsak par $(a,A)$ $\exists$ zvezna funkcija $\varphi:X\to[0,1]$, da velja $\varphi(a)=1$ in $\varphi(x)=0,\forall x\in A$.
+                \item $T_4$: Za disjunktni zaprti množici $A,B\subseteq X$ $\exists$ okolici, ki ostro ločita $A$ in $B$.
+            \end{itemize}
+            \item (O) Fréchetova lastnost: $T_1$; Hausdorffova lastnost: $T_2$; regularnost: $T_0$ in $T_3$; normalnost: $T_1$ in $T_4$.
+            \item (T) Prostor $X$ ima lastnost $T_3$ natanko takrat, ko za vsak $x\in X$ in vsako odprto okolico $U$ za $x$ $\exists$ taka odprta množica $V$, da velja $x\in V\subseteq \overline{V}\subseteq U$.
+            \item (I) Prostor, ki je regularen in $2$-števen, je normalen.
+            \item (T) Ekvivalentno je: (1) Prostor $X$ je nepovezan.~(2) Prostor $X$ je disjunktna unija dveh nepraznih zaprtih podmnožic.~(3) V prostoru $X$ $\exists$ prava neprazna pomnožica, ki je hkrati odprta in zaprta.~(4) $\exists$ surjektivna preslikava $f:X\to\{0,1\}$.
+            \item (I)  $X$ kompakten, $Y$ pa Hausdorffov prostor.~(1) Vsaka preslikava $f:X\to Y$ je zaprta.~(2) Vsaka injektivna preslikava $f:X\to Y$ je vložitev.~(3) Vsaka bijektivna preslikava $f:X\to Y$ je homeomorfizem.
+            \item (I) (Urisonova lema) Hausdorffov prostor $X$ je normalen natanko takrat, ko za poljubni disjunktni neprazni zaprti podmnožici $A,B\subseteq X$ $\exists$ preslikava $f:(X,A,B)\to(I,0,1)$.
+            \item (I) (Tietzejev razširitveni izrek)  $A$ zaprt podprostor normalnega prostora $X$ in $J\subseteq\mathbb{R}$ poljuben interval.~Tedaj vsako preslikavo $f:A\to J$ lahko razširimo do preslikave $F:X\to J$.
+        \end{enumerate}
+
+
+\begin{table}[htbp]
+
+    \tiny\centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+
+    Lastnost &  & Lastnost & \\ \hline \hline
+    $T_1$ (Fréchet) & dedna, produktna & diskretnost & dedna, končno-produktna, kvocientna \\ \hline
+    $T_2$ (Hausdorff) & dedna, produktna, zaprte bijekcije, nekvocientna & metrizabilnost & dedna, števno-produktna, nekvocientna \\ \hline
+    $T_3$ & dedna, produktna & kompaktnost & produktna, zvezne, zaprto-dedna, kvocientna \\ \hline
+    $T_4$ &  & lokalna kompaktnost & odprte zvezne, produktna(kompaktnost), nekvocientna \\ \hline
+    $1$-števnost & dedna, števno-produktna, nekvocientna & povezanost & produktna, zvezne, kvocientna \\ \hline
+    $2$-števnost & dedna, števno-produktna, odprte zvezne surjekcije, nekvocientna & lokalna povezanost & produktna(povezanost), odprte zvezne, zaprte zvezne, kvocientna \\ \hline
+    separabilnost & odprto-dedna, zvezna, števno-produktna, kvocientna & povezanost s potmi & produktna, zvezne, kvocientna \\ \hline
+    regularnost ($T_3, T_0$) & dedna, produktna & lokalna povezanost s potmi & končno-produktna, odprte zvezne, zaprte zvezne, kvocientna \\ \hline
+    normalnost ($T_4, T_1$) & zaprto-dedna, zaprte zvezne surjekcije & popolna nepovezanost & končno-produktna, nekvocientna \\ \hline
+    \end{tabular}
+    \label{tab:top_properties}
+    \end{table}
+
+%\section{UGT}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+\begin{enumerate}
+    \item \textbf{Kvocientna množica:}  \(X\) topološki prostor in \(\sim\)
+    ekvivalenčna relacija na \(X\).~\textit{Kvocientna množica} \(X/{\sim}\) je množica
+    vseh ekvivalenčnih razredov v \(X\) glede na \(\sim\), opremljena z najmočnejšo
+    topologijo, tj.~topologijo \(\tau\) na \(X/{\sim}\), za katero velja:
+    $$ V \in \tau \iff p^{-1}(V) \subseteq X \text{ je odprta za vsako } V
+    \subseteq X/{\sim}, $$ kjer je \(p: X \rightarrow X/{\sim}\) kvocientna projekcija.
+    \item \textbf{Kvocientna projekcija:}  \(X\) topološki prostor in \(\sim\)
+    ekvivalenčna relacija na \(X\).~\textit{Kvocientna projekcija}
+    \(q: X \rightarrow X/{\sim}\) je preslikava, ki vsakemu elementu \(x\) priredi
+    njegov ekvivalenčni razred \([x]\).
+    \item Za podmnožico \(A\) prostora \(X\) je kvocientna projekcija \(q(A)\)
+    odprta/zaprta v kvocientnem prostoru \(X/{\sim}\) natanko tedaj, ko je nasičenje
+    \(A\), označeno z \(q^{-1}(q(A))\), odprto/zaprto v originalnem prostoru \(X\).
+    \item \textbf{Inducirana preslikava:}  \(f: X \rightarrow Y\) preslikava med
+    topološkima prostoroma \(X\) in \(Y\), ter \(\sim\) ekvivalenčna relacija na \(X\).
+    Če je preslikava $f$ konstantna na ekvivalenčnih razredih, je njena \textit{inducirana preslikava} 
+		\(f_{\sim}: X/{\sim} \rightarrow Y\),
+    definirana kot \(f_{\sim}([x]) = f(x)\) za vsak \(x \in X\), kjer je \([x]\)
+    ekvivalenčni razred elementa \(x\) glede na \(\sim\).
+    \item $f = \bar{f} \circ q $, preverimo: $f$ dela prave identifikacije:
+    $x \sim y \Leftrightarrow f(x) = f(y)$, zvezna, surjektivna,
+    kvocientna v ožjem smislu.
+    \item Surjektivna preslikava $f: X \rightarrow Y$ je kvocientna v ožjem smislu
+    $\Leftrightarrow$ slika nasičene odprte podmnožice $X$ v odprte podmnožice $Y$
+    $\Leftrightarrow$ slika nasičene zaprte podmnožice $X$ v zaprte podmnožice $Y$.
+    \item  $r: X \rightarrow Y$ in $s: Y \rightarrow X$ zvezni preslikavi, za
+    kateri velja $r \circ  s = Id_Y$ (``$r$ je retrakcija, $s$ je prerez'').~Tedaj je $r$
+    kvocientna in $s$ vložitev.
+    \item  $f : X \rightarrow Y$ zvezna preslikava in $(K_i \subseteq  X)_{i \in I}$ pokritje
+    $X$ s kompaktnimi podprostori.~Privzemimo, da je družina $(f_*(K_i))_{i \in I}$
+    lokalno končna v $Y$ in da je $Y$ Hausdorffov.~Tedaj je f zaprta.~Posledično,
+    če je $f$ dodatno še surjektivna, je kvocientna.
+    \item  $f : X \rightarrow Y$ zvezna preslikava, $Y$ Hausdorffov in $K \subseteq X$
+    kompakt, za katerega velja $f_*(K) = Y$.~Tedaj je $f$ kvocientna.
+    \item \textbf{Konveksna kombinacija}: daljico $AB$ slikamo v daljico $CD: $
+    $(1-t)A + tB \mapsto (1-t)C + tD$.
+    \item $I := [0, 1], X = I^2, (0, y) \sim (1, y), (x, 0) \sim (x, 1).~X/\sim \
+    \approx S^1 \times S^1$.~Preslikava: $f: I \times I \rightarrow S^1 \times S^1,
+    (x, y) \mapsto (e^{2 \pi i x}, e^{2 \pi i y})$
+    \item Model \textbf{Möbiusovega traku} znotraj polnega torusa: $f: [0, 1] \times [-1, 1]
+    \rightarrow S^1 \times B^2, f(x, y) = (e^{2 \pi i x}, e^{\pi i x}y)$
+    \item \textbf{Deljive} top.~lastnosti: kompaktnost, povezanost (s potmi), separabilnost,
+    lok.~povezanost (s potmi), diskretnost, trivialnost
+    \item \textbf{Nedeljive} top.~lastnosti: ločljivostne, lok.~kompaktnost, 1- in 2-števnost,
+    metrizabilnost, popolna nepovezanost.
+    \item \textbf{Top grupa} $G$ je grupa in top.~pr., množenje $m: G \times
+    G \rightarrow G, (a, b) \mapsto ab$ in invertiranje $inv: G \rightarrow G, a
+    \mapsto a^{-1}$ sta zvezni.
+    \item \textbf{Leva translacija} $L_a : G \rightarrow G, g \mapsto ag$ in
+    \textbf{desna translacija} sta homeomorfizma.
+    \item Topološka grupa je \textbf{homogen prostor}, tj.~$\forall a, b \in G \
+    \exists$ homeo $h: G \rightarrow G, a \mapsto b$.
+    \item \textbf{Delovanje} $G$ na $X$ je zv.~preslikava $\varphi: G \times X
+    \rightarrow X, (g, x) \mapsto g \cdot x$, za katero velja $\varphi(e, x) =
+    e \cdot x = x, h \cdot (g \cdot x) = (hg) \cdot x$.
+    \item Ekv.~relacija glede na delovanje: $x \sim y \Leftrightarrow \exists G \in G:
+    y = g \cdot x$
+    \item \textbf{Orbita} elementa $x$ je $G \cdot x = \{g \cdot x | g \in G\} = [x]$
+    \item \textbf{Prostor orbit} je kvoc.~prostor $X/G$ pri tej relaciji.
+    \item \textbf{Stabilizator} elementa $x$ je $G_x = \{g \in G | g \cdot x = x\}$
+    \item Če top.~grupa $G$ deluje na top.~prostoru $X$, potem je kvoc.~projekcija
+    $q: X \rightarrow X/G$ odprta.
+    \item Za top.~grupo $G$ velja: (a) Množica $A \subseteq G$ je okolica točke
+    $a \in G$ natanko tedaj, ko je $ba^{-1}A$ okolica točke $b \in G$.
+    (b) Če je $H \leq G$ podgrupa in okolica enote v $G$, je $H$ odprta in zaprta v $G$.
+    (c) Če je C komponenta za povezanost, ki vsebuje enoto $G$, je $C$ zaprta edinka v $G$.
+    (d) Za $G$ so lastnosti $T_0, T_1, T_2$ ekvivalentne.
+    \item \textbf{Stožec} nad $X$ je $CX = X \times [0, 1]/X \times \{1\}$.
+    \item \textbf{Suspenzija} nad $X$ je $\Sigma  X = X \times [-1, 1]/
+    \{X \times \{-1\}, X \times \{1\}\}$.
+    \item \textbf{Zlepek}: $X, Y$ top.~prostora, $A \subseteq X, f: A \rightarrow Y$
+    zvezna.~$X \cup_f Y = (X + Y)/a \sim f(a) \forall a \in A$.
+    \item \textbf{Normalnost zlepkov}: $X, Y$ normalna, $A^{\text{zap}} \subseteq X, f:
+    A \rightarrow Y$ zv.~$\Rightarrow$ zlepek $X \cup_f Y$ normalen.
+    \item $A^{\text{zap}} \subseteq X, f: A \rightarrow Y$ zap vložitev.~$Z = X \cup_f Y$
+    $\Rightarrow$ (1) $X, Y$ 2-števna $\Rightarrow Z$ 2-števen,
+    (2) $X, Y$ regularna $\Rightarrow Z$ regularen.
+    \item $q \circ in_1: X \rightarrow X \cup_f Y$ v splošnem ni vložitev.
+    \item $q \circ in_2: Y \rightarrow X \cup_f Y$ je vložitev.
+    \item Injekcije so zvezne, odprte in zaprte vložitve v vsoto.
+    \item Dogovor: za $X / \emptyset$ dobimo $X$ s še eno točko, tj.~podprostor $A$
+    se v kvocientu vedno nadomesti z eno točko.
+    \item $A_n:\forall f : \mathbb{B}^n \rightarrow \mathbb{B}^n$ zvezna ima negibno točko.
+    \item Retrakcija: $A \subseteq X, r: X \rightarrow A$ zvezna, je retrakcija, če $r|_A = id_A$, $A$ je retrakt $X$, če $\exists$ retrakcija.
+    \item Trditev: retrakt povezanega prostora je povezan, kompaktnega prostora kompakten, retrakt absolutnega ekstenzorja je absolutni ekstenzor; če $X \in T_2$, je retrakt zaprt.
+    \item $X$ ima LNT, $A$ retrakt $X$ $\Rightarrow$ $A$ ima LNT
+    \item Def: $\mathcal{R}$ raz.~top.~pr., $Y$ top.~pr., $Y \in AE(\mathcal{R})$, če za $\forall X \in \mathcal{R}, \forall A^{zap} \subseteq X, \forall f: A \rightarrow Y$ zv.\ $\exists F: X \rightarrow Y$ zv.: $F|_A = f$ ($F$~razširitev~$f$)
+    \item Lastnosti: $Y \in AE(R)$ je top.~lastnost, produkt AE je AE, vsak interval $\subseteq \mathbb{R}$ je $AE(\mathcal{N})$, $\mathcal{R} \cap AE(\mathcal{R}) \subseteq AR(\mathcal{R})$
+    \item $B_n: S^{n-1}$ ni retrakt $B^n$
+    \item Def: $f,g: X \rightarrow Y$ zv., homotopija od $f$ do $g$ je zv.~preslikava $H: X \times I \rightarrow Y$ z $H(x, 0) = f(x)$ in $H(x, 1) = g(x)$
+    \item Prostor X je kontraktibilen, če je $id_X$ homotopna ($\simeq$) kakšni konst.~preslikavi $X \rightarrow X$; homotopija = kontrakcija
+    \item Če je X kontraktibilen, je povezan s potmi
+    \item $C_n: S^{n-1}$ ni kontraktibilna
+    \item (Jordan-Brouwer)  $n \geq 2$, $S \subseteq \mathbb{R}^n$ top.~ ($n-1$)-sfera, ($S \approx S^{n-1}$). Tedaj ima $\mathbb{R}^n \setminus S$ dve komponenti, eno omejeno in eno neomejeno, obe sta odprti v $\mathbb{R}^n$ in povezani s potmi, $S$ je meja obeh.
+    \item $D_n: D \subseteq \mathbb{R}^n$  topološki $k$-disk za $0 \textless k \leq n$, torej $D \approx B^k$. $D$ ne deli $\mathbb{R}^n$
+    \item (Schönfliesov izrek) $S^1 \approx S \subseteq \mathbb{R}^2$, $V$ omejena komponenta $\mathbb{R}^2 \setminus S \Rightarrow Cl(V) \approx B^2$
+    \item Def: $S \approx S^{n-1} \subseteq \mathbb{R}^n$ je lokalno ploščata v $x \in S$, če $\exists V: x \in V^{odp} \subseteq \mathbb{R}^n$ in $\exists$ homeo $h: V \rightarrow W$, $W^{odp} \subseteq \mathbb{R}^n$,
+    da je $h_\ast(S \cap V) = (\mathbb{R}^{n-1} \times \{ 0\}) \cap W$. \quad $S$ je lokalno ploščata, če je taka v vseh svojih točkah (vložitev je krotka ali $S$ je podmnt);
+    če v $x \in S, S$ ni lokalno ploščata, je $x$ divja točka
+    \item (Brouwer)(o odprti preslikavi) $U^{odp} \subseteq \mathbb{R}^n, f:U \rightarrow \mathbb{R}^n$ zv., inj.~$\Rightarrow f$ odp.~preslikava ($\Rightarrow f_\ast(U)^{odp} \subseteq \mathbb{R}^n$)
+    \item (invarianca odp mn) $U, V \subseteq \mathbb{R}^n, U^{odp}, U \approx V \Rightarrow V^{odp} \subseteq \mathbb{R}^n$
+    \quad Posledica: $A,B \subseteq \mathbb{R}^n, A \approx B \Rightarrow Int(A) \approx Int(B)$ in $Meja(A) \approx Meja(B)$
+    \item Def: topološka mnogoterost dimenzije~$n \in \mathbb{N}$ ($n$-mnt) je $T_2$, 2-števen topološki prostor $M$, v katerem ima vsaka točka odprto okolico homeo $\mathbb{R}^n$ ali $\mathbb{R}^{n}_+$.
+    Takšno okolico $V$ imenujemo evklidska okolica, pripadajoč homeo ($h: V \stackrel{\approx}{\rightarrow} \mathbb{R}^n$ ali $\mathbb{R}^{n}_+$) imenujemo karta na $M$.
+    \item $\bold{1}$.~komponenta $n$-mnt je $n$-mnt (komponente so odprte, ker je mnt lok pov $\Leftarrow$ lok evklidskost) $\bold{2}$.~disj unija (največ) števno mnogo $n$-mnt je $n$-mnt $\bold{3}$.~Rob mnt: $M$ $n$-mnt,
+    $int(M)^{odp} \subseteq M \Rightarrow \partial M^{zap} \subseteq M$
+    \newline $\bold{Izrek}$: (o odprti preslikavi za mnt) $M$, $N$ $n$-mnt, $V^{odp} \subseteq int(M), f: V \rightarrow N$ zv., inj.~$\Rightarrow f$ odp in $f_\ast (V) \subseteq int(N)$
+    \newline $\bold{Izrek}$: $M$ $n$-mnt, $\partial M \neq \emptyset \Rightarrow \partial M$ $(n-1)$-mnt s praznim robom $(\partial (\partial M) = \emptyset)$; če je $M$ kompaktna $\Rightarrow \partial M$ sklenjena
+    (op: rob kompaktne ploskve je disjunktna unija krožnic) \quad $\partial M$ ne deli $M$: $M$ povezana $\Rightarrow M \setminus \partial M$ povezana
+    \newline $\bold{4}$.~Produkt mnt: $\bold{Izrek}$: $M$ $m$-mnt, $N$ $n$-mnt $\Rightarrow M \times N$ je ($m+n$)-mnt, $int(M \times N) = int(M) \times int(N), \partial (M \times N) = \partial M \times N \cup M \times \partial N$
+    $\bold{5}$.~Zlepek mnt: Def: $N$ $n$-mnt, $L$ $l$-mnt; $L \cap \partial N = \partial L \Rightarrow L$ prav vložena | $L$ lokalno ploščata ali podmnt, če je prav vložena in $\forall x \in L \exists$ evklidska okolica
+    $V: x \in V \subseteq N$ in homeo (karta) $h: V \rightarrow \mathbb{R}^n~\text{ali}~\mathbb{R}^{n}_+$, da je $h_\ast(L\cap V) = h_\ast(V) \cap (\{0\}^{n-l}\times \mathbb{R}^l)$
+    $\bold{Izrek}: N_1, N_2$ $n$-mnt, $L_i \subseteq \partial N_i$ ($n-1$)-mnt in $\partial L_i$ lokalno ploščat v $\partial N_i$ \quad $h: L_1 \rightarrow L_2$ homeo $\Rightarrow$ zlepek $N_1 \cup_h N_2 = N$
+    je n-mnt z robom, ki je zlepek $(\partial N_1 \setminus int(L_1)) \cup_{h|_{\partial L_1}} (\partial N_2 \setminus int(L_2))$ in $(N_1 \setminus L_1) \cup (N_2 \setminus L_2)$ je vložena v zlepek kot odprta podmn.
+    $\bold{6}$.~Razrez mnt: $N$ $n$-mnt, $L \subseteq N$ lokalno ploščata ($n-1$)-podmnt $\Rightarrow$ lahko $N$ prerežemo vzdolž $L$ $\bold{7}$. Povezana vsota: Def: $M,N$ n-mnt, $D \subseteq int(M), E \subseteq int(N)$
+    topološka n-diska z lok ploščatima robovoma, izberimo homeo $h: \partial D \rightarrow \partial E$. Povezana vsota M in N je $M \# N = (M \setminus int(D)) \cup_h (N \setminus int(E))$ op: $M \# N$ je n-mnt
+    \item Izrek: (homogenost mnt) $M$ povezana $n$-mnt, $x, y \in int(M) \Rightarrow \exists$ homeo $h: M \rightarrow M, h(x)=y$
+    \item Eulerjeva karakteristika in orientabilnost sta topološki lastnosti.
+    \item Eulerjeva karakteristika~$X$: $\chi(X) = \text{\#($2$-celic)} - \text{\#($1$-celic)} + \text{\#($0$-celic)}$
+    \item Karakterizacija: orientabilnost, $\chi$, št.~robnih komponent, $\chi(A \# B) = \chi(A) + \chi(B) - 2, \chi(X \cup trak) = \chi(X) - 1$
+\end{enumerate}
+$A, B \subseteq\mathbb{R}^n$
+zap, $A, B \in AE(\mathcal{N})$:
+$|A \cap B| = 1 \Rightarrow A \cup B \in AE(\mathcal{N})$ \newline
+$A, B \subseteq\mathbb{R}^n$
+zap, $A, B \in AE(\mathcal{N})$:
+$A \cap B \in AE(\mathcal{N})\Rightarrow A \cup B \in AE(\mathcal{N})$ \newline
+$X$ kompaktna mnt: $\partial X \neq \emptyset, i: \partial X \rightarrow X$ inkluzija $\Rightarrow$ zlepek $X \cup_{\partial X} X := X \cup _i X$ kompaktna mnt brez roba (imenuje se podvojitev mnogoterosti X). \quad
+$\chi(nT) = 2 - 2n$, $\chi(nP) = 2 - n$, $\chi(S^2) = \chi(0T) = 2, \chi(M) = 0, K \approx 2P$, $nT$ so orientabilni, $nP$ niso
+
+\end{document}

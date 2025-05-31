@@ -66,6 +66,8 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
 \item (I)  prostor $Y$ Hausdorffov.~(1) Vsaka končna podmnožica $Y$ je zaprta.~Točke so zaprte.~(2) Točka $y$ je stekališče množice $A\subseteq Y$ natanko takrat, ko vsaka okolica $y$ vsebuje neskončno točk iz $A$.~(3) Zaporedje v $Y$ ima največ eno limito.~(4) Množica točk ujemanja $\left\{x\in X | f(x)=g(x)\right\}$ je zaprta v $X$ za poljubni preslikavi $f,g: X\to Y$.~(5) Če se preslikavi $f,g: X\to Y$ ujemata na neki gosti podmnožici $X$, potem je $f=g$.~(6) Graf preslikave $f: X\to Y$ je azprt podprostor produkta $X\times Y$.
             
 \item (D) Aksiomi ločljivosti: Naj bo $(X,\TT)$ topološki prostor. $X$ je: 
+\item 
+% \vspace{0px}
             \begin{itemize}
                 \setlength\itemsep{-4px}
                 \item $T_0$: Za različni točki $x,x'\in X$ obstaja okolica ene izmed točki $x,x'$, ki jo loči od druge točke.
@@ -82,16 +84,25 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
             
 \item (I) Prostor, ki je regularen in $2$-števen, je normalen.
             
-\item (T) Ekvivalentno je: (1) Prostor $X$ je nepovezan.~(2) Prostor $X$ je disjunktna unija dveh nepraznih zaprtih podmnožic.~(3) V prostoru $X$ $\exists$ prava neprazna pomnožica, ki je hkrati odprta in zaprta.~(4) $\exists$ surjektivna preslikava $f:X\to\{0,1\}$.
+\item 
+\begin{itemize}[label={}]
+    \setlength\itemsep{-4px}
+    \item \(\iff\) Prostor $X$ je nepovezan
+    \item \(\iff\) Prostor $X$ je disjunktna unija dveh nepraznih zaprtih podmnožic
+    \item \(\iff\) V prostoru $X$ $\exists$ prava neprazna pomnožica, ki je hkrati odprta in zaprta
+    \item \(\iff\) $\exists$ surjektivna preslikava $f:X\to\{0,1\}$
+\end{itemize}
             
 \item (I)  $X$ kompakten, $Y$ pa Hausdorffov prostor.~(1) Vsaka preslikava $f:X\to Y$ je zaprta.~(2) Vsaka injektivna preslikava $f:X\to Y$ je vložitev.~(3) Vsaka bijektivna preslikava $f:X\to Y$ je homeomorfizem.
             
 \item (I) (Urisonova lema) Hausdorffov prostor $X$ je normalen natanko takrat, ko za poljubni disjunktni neprazni zaprti podmnožici $A,B\subseteq X$ $\exists$ preslikava $f:(X,A,B)\to(I,0,1)$.
-            
+    
+\item \(X\) lokalno povezan \(\iff\) komponente vsake odprte okolice so odprte v \(X\)
+\item Komponente za povezanost so zaprte, nenujno odprte
 % \item (I) (Tietzejev razširitveni izrek)  $A$ zaprt podprostor normalnega prostora $X$ in $J\subseteq\mathbb{R}$ poljuben interval.~Tedaj vsako preslikavo $f:A\to J$ lahko razširimo do preslikave $F:X\to J$.
         \end{enumerate}
 
-
+\vspace{-4mm}
 \begin{table}[htbp]
     \begin{tabular}{|c|c|c|c|c|}\hline
         Lastnost                & dedna & prod. & delj. & se ohranja pri    \\ \hline
@@ -118,6 +129,8 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
         popolna nepov.    &       & končno& \xmark&               \\ \hline
     \end{tabular}
 \end{table}
+\vspace{-4mm}
+
 
 % \begin{table}[htbp]
 %     % \centering
@@ -285,7 +298,10 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
     
 \item Dogovor: za $X / \emptyset$ dobimo $X$ s še eno točko, tj.~podprostor $A$
     se v kvocientu vedno nadomesti z eno točko.
-    
+
+\vspace{-3mm}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+\vspace{-5mm}
 \item \textbf{Retrakcija}: $A \subseteq X, r: X \rightarrow A$ zvezna, je retrakcija, če $r|_A = id_A$, $A$ je retrakt $X$, če $\exists$ retrakcija.
 
 \end{enumerate}
@@ -308,14 +324,25 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
 
 \item če $X \in T_2$, je retrakt zaprt.
 
+\vspace{-3mm}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+\vspace{-5mm}
+
 \item (D) \(X\) ima \textbf{LNT} (lastnost negibne točke), če ima \(\forall\) zvezna preslikava \(X \rightarrow X\) negibno točko
     
 \item $X$ ima LNT, $A$ retrakt $X$ $\Rightarrow$ $A$ ima LNT
-    
+
+\vspace{-3mm}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+\vspace{-5mm}
+
 \item (D) $\mathcal{R}$ razed top.~pr., $Y$ top.~pr., $Y \in AE(\mathcal{R})$, če za $\forall X \in \mathcal{R}, \forall A^{zap} \subseteq X, \forall f: A \rightarrow Y$ zv.\ $\exists F: X \rightarrow Y$ zv.: $F|_A = f$ ($F$~razširitev~$f$)
     
 \item Lastnosti: $Y \in AE(R)$ je top.~lastnost, produkt AE je AE, vsak interval $\subseteq \mathbb{R}$ je $AE(\mathcal{N})$, $\mathcal{R} \cap AE(\mathcal{R}) \subseteq AR(\mathcal{R})$
-    
+
+\vspace{-3mm}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+\vspace{-5mm}
     
 \item (D) $f,g: X \rightarrow Y$ zv., \textbf{homotopija} od $f$ do $g$ je zv.~preslikava $H: X \times I \rightarrow Y$ z $H(x, 0) = f(x)$ in $H(x, 1) = g(x)$
     
@@ -329,7 +356,7 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
     % \item $C_n: S^{n-1}$ ni kontraktibilna
     % \item $D_n: D \subseteq \mathbb{R}^n$  topološki $k$-disk za $0 \textless k \leq n$, torej $D \approx B^k$. $D$ ne deli $\mathbb{R}^n$
     % \begin{wraptable}{R}{0.5\textwidth}
-        \vspace{-4mm}
+        \vspace{-3mm}
         \begin{table}[htbp]
             \begin{tabular}{l}
                 $A_n:\forall f : \mathbb{B}^n \rightarrow \mathbb{B}^n$ zvezna ima negibno točko. \\
@@ -374,34 +401,27 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
     Okolico $V$ imenujemo \textbf{evklidska okolica}, 
     home. ($h: V \stackrel{\approx}{\rightarrow} \mathbb{R}^n$ ali $\mathbb{R}^{n}_+$) imenujemo \textbf{karta} na $M$.
 
-    
-\item 
-\begin{itemize}
-        \item $\bold{1}$.~komponenta $n$-mnt je $n$-mnt (komponente so odprte, ker je mnt lok pov $\Leftarrow$ lok evklidskost) 
-        \item $\bold{2}$.~disj unija (največ) števno mnogo $n$-mnt je $n$-mnt 
-        \item $\bold{3}$.~Rob mnt: $M$ $n$-mnt,
-        $int(M)^{odp} \subseteq M \Rightarrow \partial M^{zap} \subseteq M$
-        \item $\bold{Izrek}$: (o odprti preslikavi za mnt) $M$, $N$ $n$-mnt, $V^{odp} \subseteq int(M), f: V \rightarrow N$ zv., inj.~$\Rightarrow f$ odp in $f_\ast (V) \subseteq int(N)$
-        \item  $\bold{Izrek}$: $M$ $n$-mnt, $\partial M \neq \emptyset \Rightarrow \partial M$ $(n-1)$-mnt s praznim robom $(\partial (\partial M) = \emptyset)$; 
-        če je $M$ kompaktna $\Rightarrow \partial M$ sklenjena
-        (op: rob kompaktne ploskve je disjunktna unija krožnic) 
-        \quad $\partial M$ ne deli $M$: $M$ povezana $\Rightarrow M \setminus \partial M$ povezana 
-        $\bold{4}$.~Produkt mnt: 
-        
-        \item $\bold{Izrek}$: $M$ $m$-mnt, $N$ $n$-mnt $\Rightarrow M \times N$ je ($m+n$)-mnt, $int(M \times N) = int(M) \times int(N), \partial (M \times N) = \partial M \times N \cup M \times \partial N$
-        
-        \item $\bold{5}$.~Zlepek mnt: Def: $N$ $n$-mnt, $L$ $l$-mnt; $L \cap \partial N = \partial L \Rightarrow L$ prav vložena | $L$ lokalno ploščata ali podmnt, če je prav vložena in $\forall x \in L \exists$ evklidska okolica
-        $V: x \in V \subseteq N$ in homeo (karta) $h: V \rightarrow \mathbb{R}^n~\text{ali}~\mathbb{R}^{n}_+$, da je $h_\ast(L\cap V) = h_\ast(V) \cap (\{0\}^{n-l}\times \mathbb{R}^l)$
-        
-        \item $\bold{Izrek}: N_1, N_2$ $n$-mnt, $L_i \subseteq \partial N_i$ ($n-1$)-mnt in $\partial L_i$ lokalno ploščat v $\partial N_i$ \quad $h: L_1 \rightarrow L_2$ homeo $\Rightarrow$ zlepek $N_1 \cup_h N_2 = N$
-        je n-mnt z robom, ki je zlepek $(\partial N_1 \setminus int(L_1)) \cup_{h|_{\partial L_1}} (\partial N_2 \setminus int(L_2))$ in $(N_1 \setminus L_1) \cup (N_2 \setminus L_2)$ je vložena v zlepek kot odprta podmn.
-        
-        \item $\bold{6}$.~Razrez mnt: $N$ $n$-mnt, $L \subseteq N$ lokalno ploščata ($n-1$)-podmnt $\Rightarrow$ lahko $N$ prerežemo vzdolž $L$ 
-        
-        \item $\bold{7}$. Povezana vsota: Def: $M,N$ n-mnt, $D \subseteq int(M), E \subseteq int(N)$
-        topološka n-diska z lok ploščatima robovoma, izberimo homeo $h: \partial D \rightarrow \partial E$. Povezana vsota M in N je $M \# N = (M \setminus int(D)) \cup_h (N \setminus int(E))$ op: $M \# N$ je n-mnt
-    
-\end{itemize}    
+\item komponenta $n$-mnt je $n$-mnt (komponente so odprte, ker je mnt lok pov $\Leftarrow$ lok evklidskost) 
+\item disj unija (največ) števno mnogo $n$-mnt je $n$-mnt 
+\item Rob mnt: $M$ $n$-mnt, $Int(M)^{odp} \subseteq M \Rightarrow \partial M^{zap} \subseteq M$
+\item (I)(o odprti preslikavi za mnt) $M$, $N$ $n$-mnt, $V^{odp} \subseteq int(M), f: V \rightarrow N$ zv., inj.~$\Rightarrow f$ odp in $f_\ast (V) \subseteq int(N)$
+\item  (I) $M$ $n$-mnt, $\partial M \neq \emptyset \Rightarrow \partial M$ $(n-1)$-mnt s praznim robom $(\partial (\partial M) = \emptyset)$; 
+\item če je $M$ kompaktna $\Rightarrow \partial M$ sklenjena (op: rob kompaktne ploskve je disjunktna unija krožnic) 
+\item $\partial M$ ne deli $M$ ($M$ povezana $\Rightarrow M \setminus \partial M$ povezana)
+% \item $\bold{4}$.~Produkt mnt: 
+\item (I) $M$ $m$-mnt, $N$ $n$-mnt $\Rightarrow M \times N$ je ($m+n$)-mnt
+\item $\Int(M \times N) = \Int(M) \times \Int(N), \partial (M \times N) = \partial M \times N \cup M \times \partial N$
+\item Zlepek mnt: (D) $N$ $n$-mnt, $L$ $l$-mnt; $L \cap \partial N = \partial L \Rightarrow L$ \textbf{prav vložena} 
+\item $L$ lokalno ploščata ali podmnt, če je prav vložena in $\forall x \in L \exists$ evklidska okolica
+    $V: x \in V \subseteq N$ in homeo $h: V \rightarrow \mathbb{R}^n~\text{ali}~\mathbb{R}^{n}_+$, da je $h_\ast(L\cap V) = h_\ast(V) \cap (\{0\}^{n-l}\times \mathbb{R}^l)$
+%Povej to na lepši način
+\item (I) $N_1, N_2$ $n$-mnt, $L_i \subseteq \partial N_i$ ($n-1$)-mnt in $\partial L_i$ lokalno ploščat v $\partial N_i$ 
+    \quad $h: L_1 \rightarrow L_2$ homeo $\Rightarrow$ zlepek $N_1 \cup_h N_2 = N$
+    je n-mnt z robom, ki je zlepek $(\partial N_1 \setminus \Int(L_1)) \cup_{h|_{\partial L_1}} (\partial N_2 \setminus \Int(L_2))$ in $(N_1 \setminus L_1) \cup (N_2 \setminus L_2)$ je vložena v zlepek kot odprta podmn.
+\item $N$ $n$-mnt, $L \subseteq N$ lokalno ploščata ($n-1$)-podmnt $\Rightarrow$ lahko $N$ prerežemo vzdolž $L$ 
+\item (D) $M,N$ n-mnt, $D \subseteq \Int(M), E \subseteq \Int(N)$
+topološka n-diska z lok ploščatima robovoma, izberimo homeo $h: \partial D \rightarrow \partial E$.\textbf{Povezana vsota} M in N je $M \# N = (M \setminus \Int(D)) \cup_h (N \setminus \Int(E))$ op: $M \# N$ je n-mnt
+   
 \item (I)(homogenost mnt) $M$ povezana $n$-mnt, $x, y \in int(M) \Rightarrow \exists$ homeo $h: M \rightarrow M, h(x)=y$
     
 \item Eulerjeva karakteristika in orientabilnost sta topološki lastnosti.

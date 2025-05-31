@@ -38,7 +38,7 @@
 \begin{document}
 % \linespread{}
 
-\section{STOP}
+% \section{STOP}
 % \setlength{\textfloatsep}{0pt}  %% Or whatever length
 % \setlength\lineskip{0pt}
 \begin{enumerate} 
@@ -115,6 +115,7 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
         separabilnost           & odprto& števno& \cmark& zvezna            \\ \hline
         regularnost ($T_3, T_0$)& \cmark& \cmark&       &                   \\ \hline
         normalnost ($T_4, T_1$) & zaprto&       &       & zap. zvezne sur.  \\ \hline
+        absolutni ekstenzor     &       & \cmark&       &                   \\ \hline
     \end{tabular}
     \begin{tabular}{|c|c|c|c|c|} \hline
         Lastnost          & dedna & prod  & delj. & se ohranja pri\\ \hline
@@ -221,7 +222,7 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
     $\Leftrightarrow$ slika nasičene odprte podmnožice $X$ v odprte podmnožice $Y$
     $\Leftrightarrow$ slika nasičene zaprte podmnožice $X$ v zaprte podmnožice $Y$.
     
-\item  $r: X \rightarrow Y$ in $s: Y \rightarrow X$ zvezni preslikavi, za
+\item  $r: X \rightarrow Y$ in $s: Y \rightarrow X$ zvetni, za
     kateri velja $r \circ  s = Id_Y$ (``$r$ je retrakcija, $s$ je prerez'').~Tedaj je $r$
     kvocientna in $s$ vložitev.
     
@@ -244,10 +245,10 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
     \rightarrow S^1 \times B^2, f(x, y) = (e^{2 \pi i x}, e^{\pi i x}y)$
     
 % \item \textbf{Deljive} top.~lastnosti: kompaktnost, povezanost (s potmi), separabilnost,
-    lok.~povezanost (s potmi), diskretnost, trivialnost
+    % lok.~povezanost (s potmi), diskretnost, trivialnost
     
 % \item \textbf{Nedeljive} top.~lastnosti: ločljivostne, lok.~kompaktnost, 1- in 2-števnost,
-    metrizabilnost, popolna nepovezanost.
+    % metrizabilnost, popolna nepovezanost.
     
 \item \textbf{Top grupa} $G$ je grupa in top.~pr., množenje $m: G \times
     G \rightarrow G, (a, b) \mapsto ab$ in invertiranje $inv: G \rightarrow G, a
@@ -265,10 +266,12 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
     
 \item Ekv.~relacija glede na delovanje: $x \sim y \Leftrightarrow \exists g \in G:
     y = g \cdot x$
+    \textbf{Stabilizator} elementa $x$ je $G_x = \{g \in G | g \cdot x = x\}$
+
     
 \item \textbf{Orbita} elementa $x$ je $G \cdot x = \{g \cdot x | g \in G\} = [x]$, \textbf{Prostor orbit} je kvoc.~prostor $X/G$ pri tej relaciji.
     
-\item \textbf{Stabilizator} elementa $x$ je $G_x = \{g \in G | g \cdot x = x\}$
+% \item \textbf{Stabilizator} elementa $x$ je $G_x = \{g \in G | g \cdot x = x\}$
     
 \item Če top.~grupa $G$ deluje na top.~prostoru $X$, potem je kvoc.~projekcija
     $q: X \rightarrow X/G$ odprta.
@@ -302,7 +305,6 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
 \vspace{-3mm}
 \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
 \vspace{-5mm}
-\item \textbf{Retrakcija}: $A \subseteq X, r: X \rightarrow A$ zvezna, je retrakcija, če $r|_A = id_A$, $A$ je retrakt $X$, če $\exists$ retrakcija.
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -318,101 +320,162 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \subsection{Drugi kolokvij}
 \begin{enumerate}
-    \setlength\itemsep{2px}%%% Vrednosti so lahko negativne
+    \setlength\itemsep{3px}%%% Vrednosti so lahko negativne
     
-\item (T) Retrakt povezanega/kompaktnega prostora je povezan/kompakten, retrakt absolutnega ekstenzorja je absolutni ekstenzor; 
+% \item \textbf{Retrakcija}: $A \subseteq X, r: X \rightarrow A$ zvezna, je retrakcija, če $r|_A = id_A$, $A$ je retrakt $X$, če $\exists$ retrakcija.
 
-\item če $X \in T_2$, je retrakt zaprt.
+\vspace{-2mm}
+\begin{table}[htbp]
+    \begin{tabular}{p{14cm}}
+        $A \subseteq X, r: X \rightarrow A$ zvezna, je \textbf{retrakcija}, če $r|_A = id_A$, $A$ je \textbf{retrakt} $X$, če $\exists$ retrakcija \\
+    \end{tabular}
+    \begin{tabular}{|l|}
+        \hline
+        če $X \in T_2$, je retrakt zaprt \\
+        \hline
+    \end{tabular}
+\end{table}
+\vspace{-4.5mm}
+
+\item (T)Retrakt povezanega/kompaktnega prostora je povezan/kompakten, retrakt absolutnega ekstenzorja je absolutni ekstenzor
+
+% \vspace{-3mm}
+% \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+% \vspace{-3mm}
 
 \vspace{-3mm}
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
-\vspace{-5mm}
+\begin{table}[htbp]
+    \begin{tabular}{p{11.8cm}}
+        (D) \(X\) ima \textbf{LNT}, če ima \(\forall\) zvezna preslikava \(X \rightarrow X\) negibno točko \\ 
+    \end{tabular}    
+    \begin{tabular}{|l|}
+        \hline
+        $X$ ima LNT, $A$ retrakt $X$ $\Rightarrow$ $A$ ima LNT \\
+        \hline
+    \end{tabular}
+\end{table}
+\vspace{-4mm}
 
-\item (D) \(X\) ima \textbf{LNT} (lastnost negibne točke), če ima \(\forall\) zvezna preslikava \(X \rightarrow X\) negibno točko
-    
-\item $X$ ima LNT, $A$ retrakt $X$ $\Rightarrow$ $A$ ima LNT
-
-\vspace{-3mm}
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
-\vspace{-5mm}
+% \vspace{-3mm}
+% \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+% \vspace{-5mm}
 
 \item (D) $\mathcal{R}$ razed top.~pr., $Y$ top.~pr., $Y \in AE(\mathcal{R})$, če za $\forall X \in \mathcal{R}, \forall A^{zap} \subseteq X, \forall f: A \rightarrow Y$ zv.\ $\exists F: X \rightarrow Y$ zv.: $F|_A = f$ ($F$~razširitev~$f$)
-    
-\item Lastnosti: $Y \in AE(R)$ je top.~lastnost, produkt AE je AE, vsak interval $\subseteq \mathbb{R}$ je $AE(\mathcal{N})$, $\mathcal{R} \cap AE(\mathcal{R}) \subseteq AR(\mathcal{R})$
 
-\vspace{-3mm}
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
-\vspace{-5mm}
+\vspace{-4mm}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|l|}
+        \hline
+        \(\forall\) interval $\subseteq \mathbb{R}$ je $AE(\mathcal{N})$ \\
+        $\mathcal{R} \cap AE(\mathcal{R}) \subseteq AR(\mathcal{R})$ \\
+        \hline
+    \end{tabular}
+    \begin{tabular}{l}
+        Retrakt povezanega/kompaktnega prostora je povezan/kompakten \\ 
+        retrakt absolutnega ekstenzorja je absolutni ekstenzor \\
+    \end{tabular}
+    \begin{tabular}{|c|}
+        \hline
+        Če je X kontraktibilen \\
+        je povezan s potmi \\
+        \hline
+    \end{tabular}
+\end{table}
+\vspace{-4mm}
+
+% \vspace{-3mm}
+% \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+% \vspace{-5mm}
     
 \item (D) $f,g: X \rightarrow Y$ zv., \textbf{homotopija} od $f$ do $g$ je zv.~preslikava $H: X \times I \rightarrow Y$ z $H(x, 0) = f(x)$ in $H(x, 1) = g(x)$
     
 \item (D) Prostor X je \textbf{kontraktibilen}, če je $id_X$ homotopna ($\simeq$) kakšni konst.~preslikavi $X \rightarrow X$; homotopija = kontrakcija
     
-\item Če je X kontraktibilen, je povezan s potmi
+% \item Če je X kontraktibilen, je povezan s potmi
 
-% \begin{itemize}
-    % \item $A_n:\forall f : \mathbb{B}^n \rightarrow \mathbb{B}^n$ zvezna ima negibno točko.
-    % \item $B_n: S^{n-1}$ ni retrakt $B^n$
-    % \item $C_n: S^{n-1}$ ni kontraktibilna
-    % \item $D_n: D \subseteq \mathbb{R}^n$  topološki $k$-disk za $0 \textless k \leq n$, torej $D \approx B^k$. $D$ ne deli $\mathbb{R}^n$
-    % \begin{wraptable}{R}{0.5\textwidth}
-        \vspace{-3mm}
-        \begin{table}[htbp]
-            \begin{tabular}{l}
-                $A_n:\forall f : \mathbb{B}^n \rightarrow \mathbb{B}^n$ zvezna ima negibno točko. \\
-                $B_n: S^{n-1}$ ni retrakt $B^n$ \\
-                $C_n: S^{n-1}$ ni kontraktibilna \\
-                $D_n: D \subseteq \mathbb{R}^n$  topološki $k$-disk za $0 \textless k \leq n$, torej $D \approx B^k$. $D$ ne deli $\mathbb{R}^n$ \\
-            \end{tabular}
-            \begin{tabular}{|l|}
-                \hline
-                $\chi(nT) = 2 - 2n$ \\
-                $\chi(nP) = 2 - n$ \\
-                $\chi(S^2) = \chi(0T) = 2$ \\
-                $\chi(M) = 0$ \\
-                \hline
-            \end{tabular}
-            \begin{tabular}{l}
-                $nT$ so orientabilni \\
-                $nP$ niso orientabilni \\
-                $K \approx 2P$
-            \end{tabular}
-        \end{table}
-        \vspace{-4mm}
-    % \end{wraptable}
-% \end{itemize}
-        
+\vspace{1mm}
+% \begin{table}[htbp]
+    \begin{tabular}{|l|}
+        \hline
+        $A_n:\forall f : \mathbb{B}^n \rightarrow \mathbb{B}^n$ zvezna ima negibno točko \\
+        $C_n: S^{n-1}$ ni kontraktibilna \\
+        $B_n: S^{n-1}$ ni retrakt $B^n$ \\
+        $D_n: D \subseteq \mathbb{R}^n$  topološki $k$-disk za $0 < k \leq n$, torej $D \approx B^k$. $D$ ne deli $\mathbb{R}^n$ \\    
+        \hline
+    \end{tabular}
+% \end{table}
+% \vspace{-4mm}
+
+
+% \vspace{-3mm}
+% \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+% \vspace{-5mm}
+
 \item (I)(Jordan-Brouwer)  $n \geq 2$, $S \subseteq \mathbb{R}^n$ top.~ ($n-1$)-sfera, ($S \approx S^{n-1}$). Tedaj ima $\mathbb{R}^n \setminus S$ dve komponenti, eno omejeno in eno neomejeno, obe sta odprti v $\mathbb{R}^n$ in povezani s potmi, $S$ je meja obeh.
         
 \item (I)(Schönfliesov) $S^1 \approx S \subseteq \mathbb{R}^2$, $V$ omejena komponenta $\mathbb{R}^2 \setminus S \Rightarrow Cl(V) \approx B^2$
-    
+
+% \vspace{-3mm}
+% \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+% \vspace{-5mm}
+
 \item (D) $S \approx S^{n-1} \subseteq \mathbb{R}^n$ je \textbf{lokalno ploščata} v $x \in S$, če $\exists V: x \in V^{odp} \subseteq \mathbb{R}^n$ in $\exists$ homeo $h: V \rightarrow W$, $W^{odp} \subseteq \mathbb{R}^n$,
     da je $h_\ast(S \cap V) = (\mathbb{R}^{n-1} \times \{ 0\}) \cap W$. \quad $S$ je \textbf{lokalno ploščata}, če je taka v vseh svojih točkah (vložitev je krotka ali $S$ je podmnt);
     če v $x \in S, S$ ni lokalno ploščata, je $x$ \textbf{divja točka}
-    
+ 
+% \vspace{-3mm}
+% \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+% \vspace{-5mm}
+
 \item (I)(Brouwer)(o odprti preslikavi) $U^{odp} \subseteq \mathbb{R}^n, f:U \rightarrow \mathbb{R}^n$ zv., inj.~$\Rightarrow f$ odp.~preslikava ($\Rightarrow f_\ast(U)^{odp} \subseteq \mathbb{R}^n$)
     
 \item (invarianca odp mn) $U, V \subseteq \mathbb{R}^n, U^{odp}, U \approx V \Rightarrow V^{odp} \subseteq \mathbb{R}^n$
-    \quad 
     
-\item Posledica: $A,B \subseteq \mathbb{R}^n, A \approx B \Rightarrow Int(A) \approx Int(B)$ in $Meja(A) \approx Meja(B)$
-    
+\item Posledica: $A,B \subseteq \mathbb{R}^n, A \approx B \Rightarrow \Int(A) \approx \Int(B)$ in $\partial(A) \approx \partial(B)$
+
+% \vspace{-3mm}
+% \hrulefill
+% \vspace{-1.5mm}
+
 \item (D) topološka \textbf{mnogoterost} dimenzije~$n \in \mathbb{N}$ ($n$-mnt) je $T_2$, 2-števen topološki prostor $M$, v katerem ima vsaka točka odprto okolico homeo $\mathbb{R}^n$ ali $\mathbb{R}^{n}_+$.
     Okolico $V$ imenujemo \textbf{evklidska okolica}, 
     home. ($h: V \stackrel{\approx}{\rightarrow} \mathbb{R}^n$ ali $\mathbb{R}^{n}_+$) imenujemo \textbf{karta} na $M$.
 
 \item komponenta $n$-mnt je $n$-mnt (komponente so odprte, ker je mnt lok pov $\Leftarrow$ lok evklidskost) 
 \item disj unija (največ) števno mnogo $n$-mnt je $n$-mnt 
-\item Rob mnt: $M$ $n$-mnt, $Int(M)^{odp} \subseteq M \Rightarrow \partial M^{zap} \subseteq M$
+\item Rob mnt: $M$ $n$-mnt, $\Int(M)^{odp} \subseteq M \Rightarrow \partial M^{zap} \subseteq M$
+
+% \vspace{-3mm}
+% \hrulefill
+% \vspace{-1.5mm}
+
 \item (I)(o odprti preslikavi za mnt) $M$, $N$ $n$-mnt, $V^{odp} \subseteq int(M), f: V \rightarrow N$ zv., inj.~$\Rightarrow f$ odp in $f_\ast (V) \subseteq int(N)$
-\item  (I) $M$ $n$-mnt, $\partial M \neq \emptyset \Rightarrow \partial M$ $(n-1)$-mnt s praznim robom $(\partial (\partial M) = \emptyset)$; 
 \item če je $M$ kompaktna $\Rightarrow \partial M$ sklenjena (op: rob kompaktne ploskve je disjunktna unija krožnic) 
-\item $\partial M$ ne deli $M$ ($M$ povezana $\Rightarrow M \setminus \partial M$ povezana)
-% \item $\bold{4}$.~Produkt mnt: 
-\item (I) $M$ $m$-mnt, $N$ $n$-mnt $\Rightarrow M \times N$ je ($m+n$)-mnt
-\item $\Int(M \times N) = \Int(M) \times \Int(N), \partial (M \times N) = \partial M \times N \cup M \times \partial N$
+
+% \vspace{-4mm}
+% \begin{table}[htbp]
+    \begin{tabular}{l}
+        (I) $M$ $n$-mnt, $\partial M \neq \emptyset \Rightarrow \partial M$ $(n-1)$-mnt s praznim robom $(\partial (\partial M) = \emptyset)$  \\
+        ( ) $\partial M$ ne deli $M$ ($M$ povezana $\Rightarrow M \setminus \partial M$ povezana) \\
+        (I) $M$ $m$-mnt, $N$ $n$-mnt $\Rightarrow M \times N$ je ($m+n$)-mnt \\
+    \end{tabular}
+    \begin{tabular}{|l|}
+        \hline
+        $\Int(M \times N) = \Int(M) \times \Int(N)$ \\
+        $\partial (M \times N) = \partial M \times N \cup M \times \partial N$ \\
+        \hline
+    \end{tabular}
+% \end{table}
+% \vspace{-4mm}
+
+
+% \vspace{-3mm}
+% \hrulefill
+% \vspace{-1.5mm}
+
 \item Zlepek mnt: (D) $N$ $n$-mnt, $L$ $l$-mnt; $L \cap \partial N = \partial L \Rightarrow L$ \textbf{prav vložena} 
-\item $L$ lokalno ploščata ali podmnt, če je prav vložena in $\forall x \in L \exists$ evklidska okolica
+\item $L$ \textbf{lokalno ploščata} ali \textbf{podmnt}, če je prav vložena in $\forall x \in L \exists$ evklidska okolica
     $V: x \in V \subseteq N$ in homeo $h: V \rightarrow \mathbb{R}^n~\text{ali}~\mathbb{R}^{n}_+$, da je $h_\ast(L\cap V) = h_\ast(V) \cap (\{0\}^{n-l}\times \mathbb{R}^l)$
 %Povej to na lepši način
 \item (I) $N_1, N_2$ $n$-mnt, $L_i \subseteq \partial N_i$ ($n-1$)-mnt in $\partial L_i$ lokalno ploščat v $\partial N_i$ 
@@ -423,30 +486,52 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
 topološka n-diska z lok ploščatima robovoma, izberimo homeo $h: \partial D \rightarrow \partial E$.\textbf{Povezana vsota} M in N je $M \# N = (M \setminus \Int(D)) \cup_h (N \setminus \Int(E))$ op: $M \# N$ je n-mnt
    
 \item (I)(homogenost mnt) $M$ povezana $n$-mnt, $x, y \in int(M) \Rightarrow \exists$ homeo $h: M \rightarrow M, h(x)=y$
-    
-\item Eulerjeva karakteristika in orientabilnost sta topološki lastnosti.
+
+\vspace{-2mm}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+\vspace{-6mm}
+
+\item Eulerjeva karakteristika in orientabilnost sta topološki lastnosti. (Karakterizacija: orientabilnost, 
+$\chi$, 
+št.~robnih komponent )
     
 \item \textbf{Eulerjeva karakteristika}~$X$: $\chi(X) = \text{\#($2$-celic)} - \text{\#($1$-celic)} + \text{\#($0$-celic)}$
-    
-\item Karakterizacija: orientabilnost, $\chi$, št.~robnih komponent, $\chi(A \# B) = \chi(A) + \chi(B) - 2, \chi(X \cup trak) = \chi(X) - 1$
 
-\item 
-    \begin{itemize}
-        \item $A, B \subseteq\mathbb{R}^n$ zap, $A, B \in AE(\mathcal{N})$: $|A \cap B| = 1 \Rightarrow A \cup B \in AE(\mathcal{N})$
-        \item $A, B \subseteq\mathbb{R}^n$
-        zap, $A, B \in AE(\mathcal{N})$:
+
+\vspace{1mm}
+% \begin{table}
+    \begin{tabular}{l}
+        $A, B \subseteq\mathbb{R}^n$ zap, $A, B \in AE(\mathcal{N})$: \\ \hline
+        $|A \cap B| = 1 \Rightarrow A \cup B \in AE(\mathcal{N})$ \\
         $A \cap B \in AE(\mathcal{N})\Rightarrow A \cup B \in AE(\mathcal{N})$ 
-        % \newline
-        \item $X$ kompaktna mnt: $\partial X \neq \emptyset, i: \partial X \rightarrow X$ inkluzija $\Rightarrow$ zlepek $X \cup_{\partial X} X := X \cup _i X$ kompaktna mnt brez roba (imenuje se podvojitev mnogoterosti X)
-    \end{itemize}
-% \item \begin{itemize}
-%                 \item $\chi(nT) = 2 - 2n$, 
-%                 \item $\chi(nP) = 2 - n$, 
-%                 \item $\chi(S^2) = \chi(0T) = 2$ 
-%                 \item $\chi(M) = 0$
-%                 \item $K \approx 2P$, 
-%                 \item $nT$ so orientabilni, $nP$ niso orientabilni
-%             \end{itemize} 
+        
+    \end{tabular}
+    \begin{tabular}{|l|}
+        \hline
+        $\chi(nT) = 2 - 2n$ \\
+        $\chi(nP) = 2 - n$ \\
+        $\chi(S^2) = \chi(0T) = 2$ \\
+        \hline
+    \end{tabular}
+    \begin{tabular}{|l|}
+        \hline
+        $\chi(M) = 0$ \\
+        $\chi(A \# B) = \chi(A) + \chi(B) - 2$ \\
+        $\chi(X \cup trak) = \chi(X) - 1$ \\
+        \hline
+    \end{tabular}
+    \begin{tabular}{l}
+        $nT$ so orientabilni \\
+        $nP$ niso orientabilni \\
+        $K \approx 2P$
+    \end{tabular}
+% \end{table}
+% \vspace{-4mm}
+
+\item $X$ kompaktna mnt: $\partial X \neq \emptyset, i: \partial X \rightarrow X$ inkluzija $\Rightarrow$ zlepek $X \cup_{\partial X} X := X \cup _i X$ kompaktna mnt brez roba (podvojitev mnogoterosti X)
+
+
+
 \end{enumerate}
 
 \end{document}

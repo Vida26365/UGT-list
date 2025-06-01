@@ -52,49 +52,74 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
             
 \item (D) Prostor zadošča drugemu aksiomu števnosti (je $2$-števen), če $\exists$ kaka števna baza za njegovo topologijo.
             
-% \item (I) Metrični prostor $(X,d)$ je $2$-števen natanko takrat, ko v njem $\exists$ števna povsod gosta podmnožica.
-\item (I) Metričnost $\implies$ (2-števnost $\iff$ $\exists$ števna povsod gosta podmnožica)
-            
-\item (D) Podmnožica $A$ je povsod gosta v $X$, če seka vsako odprto množico $X$ (tako kot $\mathbb{Q}$ v $\mathbb{R}$), ali ekvivalentno, če je $\overline{A}=X$.
-            
 \item (D) Prostor je separabilen, če premore kako povsod gosto podmnožico, ki je števna.
-            
-\item (I) Če je prostor $2$-števen, je tudi separabilen in $1$-števen (obrat ne velja).
-            
-\item (O) V metričnih prostorih je $2$-števnost ekvivalentna separabilnosti.
-            
+\item (D) Podmnožica $A$ je povsod gosta v $X$, če seka vsako odprto množico $X$ (tako kot $\mathbb{Q}$ v $\mathbb{R}$), ali ekvivalentno, če je $\overline{A}=X$.
+% \item (I) Metrični prostor $(X,d)$ je $2$-števen natanko takrat, ko v njem $\exists$ števna povsod gosta podmnožica.
+
+% \item (O) V metričnih prostorih je $2$-števnost ekvivalentna separabilnosti.
+
 \item (I)  prostor $Y$ Hausdorffov.~(1) Vsaka končna podmnožica $Y$ je zaprta.~Točke so zaprte.~(2) Točka $y$ je stekališče množice $A\subseteq Y$ natanko takrat, ko vsaka okolica $y$ vsebuje neskončno točk iz $A$.~(3) Zaporedje v $Y$ ima največ eno limito.~(4) Množica točk ujemanja $\left\{x\in X | f(x)=g(x)\right\}$ je zaprta v $X$ za poljubni preslikavi $f,g: X\to Y$.~(5) Če se preslikavi $f,g: X\to Y$ ujemata na neki gosti podmnožici $X$, potem je $f=g$.~(6) Graf preslikave $f: X\to Y$ je azprt podprostor produkta $X\times Y$.
-            
+
 \item (D) Aksiomi ločljivosti: Naj bo $(X,\TT)$ topološki prostor. $X$ je: 
-\item 
-% \vspace{0px}
-            \begin{itemize}
-                \setlength\itemsep{-4px}
-                \item $T_0$: Za različni točki $x,x'\in X$ obstaja okolica ene izmed točki $x,x'$, ki jo loči od druge točke.
-                \item $T_1$: Za različni točki $x,x'\in X$ obstaja okolica točke $x$, ki jo loči od $x'$ in obenem obstaja okolica točke $x'$, ki jo loči od $x$.
-                \item $T_2$: Za različni točki $x,x'\in X$ obstajata okolici, ki ostro ločita $x$ in $x'$.
-                \item $T_3$: Za točki $x\in X$ in zaprto množico $A\subseteq X$, ki ne vsebuje $x$, obstajata okolici, ki ostro ločita $x$ in $A$.
+% \item 
+\vspace{-1mm}
+\begin{itemize}
+    \setlength\itemsep{-1mm}
+    \item $T_0$: Za različni točki $x,x'\in X$ obstaja okolica ene izmed točki $x,x'$, ki jo loči od druge točke.
+    \item $T_1$: Za različni točki $x,x'\in X$ obstaja okolica točke $x$, ki jo loči od $x'$ in obenem obstaja okolica točke $x'$, ki jo loči od $x$.
+    \item $T_2$: Za različni točki $x,x'\in X$ obstajata okolici, ki ostro ločita $x$ in $x'$.
+    \item $T_3$: Za točki $x\in X$ in zaprto množico $A\subseteq X$, ki ne vsebuje $x$, obstajata okolici, ki ostro ločita $x$ in $A$.
                 %\item $T_{3\frac{1}{2}}$: $a\in X$ in $A$ zaprta množica, ki ne vsebuje $a$. Če za vsak par $(a,A)$ obstaja zvezna funkcija $\varphi:X\to[0,1]$, da velja $\varphi(a)=1$ in $\varphi(x)=0,\forall x\in A$.
-                \item $T_4$: Za disjunktni zaprti množici $A,B\subseteq X$ obstajata okolici, ki ostro ločita $A$ in $B$.
-            \end{itemize}
-            
-\item (O) Fréchetova lastnost: $T_1$; Hausdorffova lastnost: $T_2$; regularnost: $T_0$ in $T_3$; normalnost: $T_1$ in $T_4$.
-            
-\item (T) Prostor $X$ ima lastnost $T_3$ natanko takrat, ko za vsak $x\in X$ in vsako odprto okolico $U$ za $x$ $\exists$ taka odprta množica $V$, da velja $x\in V\subseteq \overline{V}\subseteq U$.
-            
-\item (I) Prostor, ki je regularen in $2$-števen, je normalen.
-            
-\item 
-\begin{itemize}[label={}]
-    \setlength\itemsep{-4px}
-    \item \(\iff\) Prostor $X$ je nepovezan
-    \item \(\iff\) Prostor $X$ je disjunktna unija dveh nepraznih zaprtih podmnožic
-    \item \(\iff\) V prostoru $X$ $\exists$ prava neprazna pomnožica, ki je hkrati odprta in zaprta
-    \item \(\iff\) $\exists$ surjektivna preslikava $f:X\to\{0,1\}$
+    \item $T_4$: Za disjunktni zaprti množici $A,B\subseteq X$ obstajata okolici, ki ostro ločita $A$ in $B$.
 \end{itemize}
             
-\item (I)  $X$ kompakten, $Y$ pa Hausdorffov prostor.~(1) Vsaka preslikava $f:X\to Y$ je zaprta.~(2) Vsaka injektivna preslikava $f:X\to Y$ je vložitev.~(3) Vsaka bijektivna preslikava $f:X\to Y$ je homeomorfizem.
+% \item (O) Fréchetova lastnost: $T_1$; Hausdorffova lastnost: $T_2$; regularnost: $T_0$ in $T_3$; normalnost: $T_1$ in $T_4$.
+
+\item (T) Prostor $X$ ima lastnost $T_3$ natanko takrat, ko za vsak $x\in X$ in vsako odprto okolico $U$ za $x$ $\exists$ taka odprta množica $V$, da velja $x\in V\subseteq \overline{V}\subseteq U$.
+
+% \item (I) Prostor, ki je regularen in $2$-števen, je normalen.
+
+% \item ( ) \(T_2\) \(\implies\) lokalna kompaktnost\)
             
+% \item Prostor $X$ je nepovezan
+% \begin{itemize}[label={\(\iff\)}]
+%     \setlength\itemsep{-1mm}
+%     \item Prostor $X$ je disjunktna unija dveh nepraznih zaprtih podmnožic
+%     \item V $X$ $\exists$ prava neprazna pomnožica, ki je hkrati odprta in zaprta
+%     \item $\exists$ surjektivna preslikava $f:X\to\{0,1\}$
+% \end{itemize}
+
+
+            
+% \item 
+% \item
+\begin{tabular}{l}
+    \hline
+    Prostor $X$ je nepovezan \\
+    \(\iff\) Prostor $X$ je disjunktna unija dveh nepraznih zaprtih podmnožic \\
+    \(\iff\) V $X$ $\exists$ prava neprazna pomnožica, ki je hkrati odprta in zaprta \\
+    \(\iff\) $\exists$ surjektivna preslikava $f:X\to\{0,1\}$ \\
+% \end{tabular}
+% \begin{tabular}{|l}
+    % \setlength\itemsep{-1mm}
+    \hline
+    (I)  $X$ kompakten, $Y$ pa Hausdorffov prostor:\\
+    \qquad Vsaka preslikava $f:X\to Y$ je zaprta. \\
+    \qquad Vsaka injektivna preslikava $f:X\to Y$ je vložitev. \\
+    \qquad Vsaka bijektivna preslikava $f:X\to Y$ je homeomorfizem. \\
+\end{tabular}
+\begin{tabular}{|l|}
+    \hline
+    (I) Metričnost $\implies$ (2-števnost $\iff$ seperabilnost) \\
+    (I) 2-števnost \(\implies\) seperabilnost in 1-števnost \\
+    % \item (I) Če je prostor $2$-števen, je tudi separabilen in $1$-števen (obrat ne velja).
+    regularnost + 2-števnost \(\implies\) normalnost \\
+    normalnost + 2-števnnost \(\implies\) metrizabilnost \\
+    2-števnost \(\implies\) (regularnost \(\iff\) metrizabilnost) \\
+    kompaktnost + T2 \(\implies\) normalnost \\
+    lokalna kompaktnost + \(T_2\) \(\implies\) regularnost \\
+    \hline
+\end{tabular}      
 \item (I) (Urisonova lema) Hausdorffov prostor $X$ je normalen natanko takrat, ko za poljubni disjunktni neprazni zaprti podmnožici $A,B\subseteq X$ $\exists$ preslikava $f:(X,A,B)\to(I,0,1)$.
     
 \item \(X\) lokalno povezan \(\iff\) komponente vsake odprte okolice so odprte v \(X\)
@@ -102,7 +127,7 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
 % \item (I) (Tietzejev razširitveni izrek)  $A$ zaprt podprostor normalnega prostora $X$ in $J\subseteq\mathbb{R}$ poljuben interval.~Tedaj vsako preslikavo $f:A\to J$ lahko razširimo do preslikave $F:X\to J$.
         \end{enumerate}
 
-\vspace{-4mm}
+\vspace{-3mm}
 \begin{table}[htbp]
     \begin{tabular}{|c|c|c|c|c|}\hline
         Lastnost                & dedna & prod. & delj. & se ohranja pri    \\ \hline
@@ -189,7 +214,7 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
 % \subsection{Prvi kolokvij}
 % \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 \begin{enumerate}
-    % \setlength\itemsep{2px}%%% Vrednosti so lahko negativne
+    \setlength\itemsep{1px}%%% Vrednosti so lahko negativne
     
 \item \textbf{Kvocientna množica:}  \(X\) topološki prostor in \(\sim\)
     ekvivalenčna relacija na \(X\).~\textit{Kvocientna množica} \(X/{\sim}\) je množica
@@ -204,22 +229,21 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
     njegov ekvivalenčni razred \([x]\).
     
 \item Za podmnožico \(A\) prostora \(X\) je kvocientna projekcija \(q(A)\)
-    odprta/zaprta v kvocientnem prostoru \(X/{\sim}\) natanko tedaj, ko je nasičenje
-    \(A\), označeno z \(q^{-1}(q(A))\), odprto/zaprto v originalnem prostoru \(X\).
-    
-\item \textbf{Inducirana preslikava:}  \(f: X \rightarrow Y\) preslikava med
-    topološkima prostoroma \(X\) in \(Y\), ter \(\sim\) ekvivalenčna relacija na \(X\).
-    Če je preslikava $f$ konstantna na ekvivalenčnih razredih, je njena \textit{inducirana preslikava} 
-		\(f_{\sim}: X/{\sim} \rightarrow Y\),
-    definirana kot \(f_{\sim}([x]) = f(x)\) za vsak \(x \in X\), kjer je \([x]\)
+    odprta/zaprta v kvocientnem prostoru \(X/{\sim}\) natanko tedaj, ko je \textbf{nasičenje}
+    \(A\) \(q^{*}(q_*(A))\), odprto/zaprto v originalnem prostoru \(X\).
+
+\item \(f: X \rightarrow Y\) preslikava, \(\sim\) ekvivalenčna relacija na \(X\).
+    Če je preslikava $f$ konstantna na ekvivalenčnih razredih, je njena \textbf{inducirana preslikava} 
+		\(f_{\sim}: X/{\sim} \rightarrow Y\), \(f_{\sim}([x]) = f(x)\), kjer je \([x]\)
     ekvivalenčni razred elementa \(x\) glede na \(\sim\).
     
 \item $f = \bar{f} \circ q $, preverimo: $f$ dela prave identifikacije:
     $x \sim y \Leftrightarrow f(x) = f(y)$, zvezna, surjektivna,
     kvocientna v ožjem smislu.
     
-\item Surjektivna preslikava $f: X \rightarrow Y$ je kvocientna v ožjem smislu
+\item Surjektivna preslikava $f: X \rightarrow Y$ je \textbf{kvocientna v ožjem smislu}
     $\Leftrightarrow$ slika nasičene odprte podmnožice $X$ v odprte podmnožice $Y$
+    % \(f_*(f*(f_*()))\)
     $\Leftrightarrow$ slika nasičene zaprte podmnožice $X$ v zaprte podmnožice $Y$.
     
 \item  $r: X \rightarrow Y$ in $s: Y \rightarrow X$ zvetni, za
@@ -265,8 +289,8 @@ $h: \mathbb{R}\to(-1,1)$: $h(x)=\frac{x}{1+|x|}$
     e \cdot x = x, h \cdot (g \cdot x) = (hg) \cdot x$.
     
 \item Ekv.~relacija glede na delovanje: $x \sim y \Leftrightarrow \exists g \in G:
-    y = g \cdot x$
-    \textbf{Stabilizator} elementa $x$ je $G_x = \{g \in G | g \cdot x = x\}$
+    y = g \cdot x$,
+    \quad \textbf{Stabilizator} elementa $x$ je $G_x = \{g \in G | g \cdot x = x\}$
 
     
 \item \textbf{Orbita} elementa $x$ je $G \cdot x = \{g \cdot x | g \in G\} = [x]$, \textbf{Prostor orbit} je kvoc.~prostor $X/G$ pri tej relaciji.
